@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/login_height"
+    android:layout_marginLeft="@dimen/ll_margin_large"
+    android:layout_marginRight="@dimen/ll_margin_large"
+    android:layout_marginTop="@dimen/ll_margin_large"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_editText_height"
+        android:layout_marginBottom="@dimen/ll_margin_small"
+        android:hint="Email id"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_editText_height"
+        android:layout_marginBottom="@dimen/ll_margin_small"
+        android:hint="********"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/ll_margin_small"
+        android:layout_marginRight="@dimen/ll_margin_small"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/button_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ll_margin_small"
+            android:layout_weight="1"
+            android:text="Sign up" />
+
+    </LinearLayout>
+</LinearLayout>

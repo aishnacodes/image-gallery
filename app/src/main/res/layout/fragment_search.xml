@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ll_margin_bottomtop"
+        android:layout_marginLeft="@dimen/ll_margin_small"
+        android:layout_marginRight="@dimen/ll_margin_small"
+        android:layout_marginTop="@dimen/ll_margin_bottomtop"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:imeOptions="actionSearch"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_search"
+            android:layout_width="@dimen/margin"
+            android:layout_height="@dimen/margin"
+            android:layout_marginTop="@dimen/ll_margin_bottomtop"
+            android:background="@drawable/search" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/ll_margin_bottomtop"
+        android:layout_marginLeft="@dimen/ll_margin_small"
+        android:layout_marginRight="@dimen/ll_margin_small"
+        android:layout_marginTop="@dimen/ll_margin_bottomtop"
+        android:orientation="vertical">
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridview_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="@dimen/columnWidth"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/horizontalSpacing"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/ll_margin_small" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/progress_short"
+            android:layout_height="@dimen/progress_short"
+            android:layout_marginBottom="@dimen/progress_short"
+            android:layout_marginLeft="@dimen/progress_long"
+            android:layout_marginRight="@dimen/progress_short"
+            android:layout_marginTop="@dimen/progress_long"
+            android:gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</LinearLayout>
+
+

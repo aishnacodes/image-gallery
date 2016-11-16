@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ImageGallery</string>
+    <string name="action_settings">Settings</string>
+    <string name="sort_prompt">Sort</string>
+    <string name="status_Notconnected">Not Connected</string>
+    <string name="status_connected">Connected</string>
+    <string name="sorry">Sorry! No images found.</string>
+    <string name="tag">"Please enter some text"</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+    <string name="signup_success">Sign Up Successful</string>
+    <string name="help">Help</string>
+    <string name="search">Search</string>
+    <string name="user">User</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Search</item>
+        <item>User</item>
+        <item>About</item>
+    </string-array>
+</resources>
